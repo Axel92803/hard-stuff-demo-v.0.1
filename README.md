@@ -2,7 +2,7 @@
 
 A small portfolio-style site for a hardware R&D shop, built for the Hard Stuff
 software dev technical challenge. Home page shows a grid of project cards
-behind a 3D hero; each project page has an interactive 3D viewer — either an
+behind a 3D hero; each project page has an interactive 3D viewer, either an
 STL (mechanical model) or a PCB stack built from real Gerber files.
 
 ## Run it
@@ -88,6 +88,6 @@ restart the dev server.
 ## About the data
 
 `src/data/projects.js` is a stand-in for a real CMS. The shape is flat and
-serialisable on purpose — in production, a sync worker (Notion → R2 →
+serialisable on purpose. In production, a sync worker (Notion → R2 →
 `projects.json`) would emit the same shape and the frontend wouldn't change.
 See the challenge-response notes for more on that architecture.
